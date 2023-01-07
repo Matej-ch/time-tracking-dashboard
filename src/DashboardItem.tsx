@@ -1,6 +1,6 @@
-function DashboardItem() {
+function DashboardItem({data}: { data: Object }) {
     return (<article>
-
+        test
     </article>);
 }
 
