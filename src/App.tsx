@@ -21,7 +21,7 @@ function App() {
                 return <DashboardItem activity={activity}
                                       key={index}
                                       frame={frame}
-                                      styleData={styleData.find(element => element.id === activity.title)}/>
+                                      styleData={styleData.find(element => element.id === activity.title)!}/>
             })}
 
         </main>
