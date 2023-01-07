@@ -1,0 +1,83 @@
+.activity {
+  --offset: 2rem;
+  --padding: 1.5rem;
+
+  width: var(--card-width);
+  position: relative;
+  padding-top: var(--offset);
+  margin: 0 auto;
+
+  .back {
+    display: flex;
+    justify-content: end;
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    max-height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+
+    img {
+      object-fit: cover;
+      padding-right: var(--padding);
+    }
+  }
+
+  .front {
+    background-color: var(--clr-card);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+
+    div:first-child {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: var(--fw-bold);
+      color: white;
+      font-size: 0.75rem;
+    }
+
+    div:last-child {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      font-weight: var(--fw-thin);
+
+      p:first-child {
+        font-size: 1.75rem;
+      }
+
+      p:last-child {
+        color: var(--clr-card-text-hover);
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  .work {
+    background-color: var(--clr-work);
+  }
+
+  .play {
+    background-color: var(--clr-play);
+  }
+
+  .study {
+    background-color: var(--clr-study);
+  }
+
+  .exercise {
+    background-color: var(--clr-exercise);
+  }
+
+  .social {
+    background-color: var(--clr-social);
+  }
+
+  .self-care {
+    background-color: var(--clr-care);
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "Work",
+    "class": "work",
+    "icon": "icon-work"
+  },
+  {
+    "id": "Play",
+    "class": "play",
+    "icon": "icon-play"
+  },
+  {
+    "id": "Study",
+    "class": "study",
+    "icon": "icon-study"
+  },
+  {
+    "id": "Exercise",
+    "class": "exercise",
+    "icon": "icon-exercise"
+  },
+  {
+    "id": "Social",
+    "class": "social",
+    "icon": "icon-social"
+  },
+  {
+    "id": "Self Care",
+    "class": "self-care",
+    "icon": "icon-self-care"
+  }
+]

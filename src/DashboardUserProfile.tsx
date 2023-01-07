@@ -7,7 +7,7 @@ function DashboardUserProfile({handleDateChange}: { handleDateChange: Function }
             <img src={img} alt="Image of Jeremy robson" width={'64'}/>
             <div className={'name'}>
                 <span>Report for</span>
-                <span>Jeremy Robson</span>
+                <h1>Jeremy Robson</h1>
             </div>
         </div>
         <div className={'back'}>

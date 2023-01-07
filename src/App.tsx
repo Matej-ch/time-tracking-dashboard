@@ -3,19 +3,25 @@ import './App.scss'
 import DashboardUserProfile from "./DashboardUserProfile";
 import DashboardItem from "./DashboardItem";
 
-import myData from './assets/userData/data.json';
+import styleData from './assets/data/classes.json';
+import myData from './assets/data/data.json';
 
 function App() {
 
+    const [frame, setFrame] = useState<string>('weekly');
+
     const handleDateChange = (timeframe: string) => {
-        console.log(timeframe)
+        setFrame(timeframe);
     }
 
     return (
         <main className="dashboard">
             <DashboardUserProfile handleDateChange={handleDateChange}/>
-            {myData.map((timeframe, index) => {
-                return <DashboardItem data={timeframe} key={index}/>
+            {myData.map((activity, index) => {
+                return <DashboardItem activity={activity}
+                                      key={index}
+                                      frame={frame}
+                                      styleData={styleData.find(element => element.id === activity.title)}/>
             })}
 
         </main>

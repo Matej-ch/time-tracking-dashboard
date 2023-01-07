@@ -1,14 +1,16 @@
 .user-profile {
-  width: min(100%, 25rem);
+  --offset: 4rem;
+  --padding: 1.5rem;
+
+  width: var(--card-width);
   position: relative;
   isolation: isolate;
-  --offset: 4rem;
   margin: 0 auto var(--offset) auto;
 
   .front {
     background-color: var(--clr-primary);
-    padding: 1.5rem;
-    border-radius: 16px;
+    padding: var(--padding);
+    border-radius: var(--border-radius);
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -24,7 +26,7 @@
         font-size: 0.85rem;
       }
 
-      span:last-child {
+      h1:last-child {
         font-size: var(--fs-large);
         font-weight: var(--fw-thin);
         color: white;
@@ -39,11 +41,11 @@
 
   .back {
     background-color: var(--clr-card);
-    padding: 1.5rem;
+    padding: var(--padding);
     display: flex;
     justify-content: space-between;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
     position: absolute;
     left: 0;
     right: 0;
