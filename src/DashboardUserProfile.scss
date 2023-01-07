@@ -1,0 +1,62 @@
+.user-profile {
+  width: min(100%, 25rem);
+  margin: 0 auto;
+  position: relative;
+
+  --offset: 4rem;
+
+  .front {
+    background-color: var(--clr-primary);
+    padding: 1.5rem;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: var(--offset);
+
+    color: var(--clr-card-text-hover);
+
+    .name {
+      display: flex;
+      flex-direction: column;
+
+      span:first-child {
+        font-size: 0.85rem;
+      }
+
+      span:last-child {
+        font-size: var(--fs-large);
+        font-weight: var(--fw-thin);
+        color: white;
+      }
+    }
+
+    img {
+      border-radius: 100%;
+      border: 2px solid white;
+    }
+  }
+
+  .back {
+    background-color: var(--clr-card);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(var(--offset) * -1);
+    z-index: -1;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--clr-card-hover);
+
+    &:hover {
+      color: var(--clr-card-text-hover);
+    }
+  }
+}
