@@ -12,6 +12,7 @@ function DashboardItem({activity, frame, styleData}: { activity: Activity, frame
         setIcon(image.default)
     });
 
+
     return (<article className={'activity'}>
         <div className={styleData.class + ' back'}>
             <img src={icon} alt="card icon"/>
@@ -23,7 +24,7 @@ function DashboardItem({activity, frame, styleData}: { activity: Activity, frame
             </div>
             <div>
                 <p>{activity.timeframes[frame].current}hrs</p>
-                <p>Last Week - {activity.timeframes[frame].previous}</p>
+                <p>{frame === 'daily' ? 'Yesterday' : (frame === 'weekly' ? 'Last Week' : 'Last Month')} - {activity.timeframes[frame].previous}hrs</p>
             </div>
         </div>
     </article>);

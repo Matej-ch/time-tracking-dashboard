@@ -29,6 +29,12 @@
     background-color: var(--clr-card);
     border-radius: var(--border-radius);
     padding: var(--padding);
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--clr-card-hover);
+    }
+
 
     div:first-child {
       display: flex;
