@@ -71,7 +71,7 @@
 
     .front {
       flex-direction: column;
-      height: 100%;
+      height: calc(100% - var(--offset) - 1rem);
       align-items: start;
       gap: 3rem;
 
@@ -81,6 +81,11 @@
           font-size: 2.5rem;
         }
       }
+    }
+
+    .back {
+      flex-direction: column;
+      gap: 1rem;
     }
   }
 }
