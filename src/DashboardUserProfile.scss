@@ -63,3 +63,24 @@
     }
   }
 }
+
+@media screen and (min-width: 800px) {
+  .user-profile {
+    grid-row: 1/3;
+    width: 100%;
+
+    .front {
+      flex-direction: column;
+      height: 100%;
+      align-items: start;
+      gap: 3rem;
+
+      .name {
+
+        h1:last-child {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}

@@ -87,3 +87,25 @@
     background-color: var(--clr-care);
   }
 }
+
+@media screen and (min-width: 800px) {
+  .activity {
+    width: 100%;
+
+    .front {
+      div:last-child {
+        flex-direction: column;
+        align-items: start;
+        padding-top: 1rem;
+
+        p:first-child {
+          font-size: 3rem;
+        }
+
+        p:last-child {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
